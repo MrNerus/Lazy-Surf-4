@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./Index-Style.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+		<link rel="stylesheet" href="./Ard-Univ.css">
+
+		<script type="text/javascript" src="./Index-Script.js"></script>
+		<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> --> <!-- bootstrap.bundle.min.js -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Lazy Surf 4</title>
+	</head>
+	<body >
+
+		<div class="w3-container w3-margin-bottom">	<!-- Section For Header -->
+			<div class="w3-row w3-blue">
+				<a href="#" class="w3-left-align s4"><h1 class="w3-h1 w3-text-white">Home</h1></a><section class="w3-right-align w3-text-black s4">(c) by Ard</section>
+			</div>
+		</div>
+
+
+		<div class="w3-container w3-section">	<!-- This is body -->
+			<div class="w3-bar">
+				<div class="w3-col s6 m3 w3-section">		<!-- Section for "Ard 101" -->
+					<button class="w3-button w3-teal w3-block" onclick="PopUpArd101()">Ard 101</button>
+					<div id="Ard101" class="w3-modal w3-animate-zoom">
+						<div class="w3-modal-content">
+							<header class="w3-container ard-titlebar"> 
+								<span onclick="document.getElementById('Ard101').style.display='none'" class="w3-button ard-close w3-display-topright">&times;</span>
+									<h2>Daily Use</h2>
+							</header>
+							<div class="w3-container">
+								<button class="w3-button w3-block w3-left-align ard-bg-olgray" onclick="openQLIOGames()">.IO Games &times;</button>
+								<button class="w3-button w3-block w3-left-align ard-bg-olgray" onclick="openQLGoogle()">Google  &times;</button>
+								<button class="w3-button w3-block w3-left-align ard-bg-olgray" onclick="openQLProxies()">Proxies &times;</button>
+								<button class="w3-button w3-block w3-left-align ard-bg-olgray" onclick="openQLResearch()">Search It &times;</button>
+								<button class="w3-button w3-block w3-left-align ard-bg-olgray" onclick="openQLGoogle()">Sites &times;</button>
+								<button class="w3-button w3-block w3-left-align ard-bg-olgray" onclick="openQLYoutube()">Youtube  &times;</button>
+								<button class="w3-button w3-block w3-left-align ard-bg-olgray" onclick="openQLWebApps()">Web Apps &times;</button>
+
+							</div>
+							<footer class="w3-container ard-titlebar">
+								<p>Items That Ard Frequently Uses...</p>
+							</footer>
+
+							<div class="w3-bar-block w3-sidebar w3-card w3-topright w3-animate-right" style="display:none;right:0;top:0;" id="QLYoutube">
+								<button onclick="closeQLYoutube()" class="w3-bar-item w3-button w3-large">&minus; [Hide]</button>
+								<li class="w3-bar-item w3-text-teal">Fun</li>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UCEr55381WIqO1w_IzgcI5DQ">Anwar Jibawi</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UCrSvhrtUgpZT3EU0x1Zoy-w">CGMeetup</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/user/corycotton">Dude Perfect</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UCIOGCEG14rj9GpIFhszkWoQ">Edwin Sarkissian</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UC1D26ByrbZVwuMgjVWmsOuw">Frame Order</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/user/JustForLaughsTV">Gags</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/user/rossbollinger">Pencilmation</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UC5jkXpfnBhlDjqh0ir5FsIQ">Rudy Mancuso</a>
+								<li class="w3-bar-item w3-text-teal">Learn</li>
+									<a target="_incognito" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/user/acapellascience">Acepella Science</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/user/AsapSCIENCE">Asap Science</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/user/TheBackyardScientist">Backyard Scientist</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UCEOXxzW2vU0P-0THehuIIeg">Captain Disillusion</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UClq42foiSgl7sSpLupnugGA">D!ng</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/user/itsokaytobesmart">It's Okay To Be Smart</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/user/Kurzgesagt">Kurzgesagt – In a Nutshell </a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UCzR-rom72PHN9Zg7RML9EbA">PBS Eons</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g">PBS Space Time</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/user/physicswoman">Physics Girl</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UCR1IuLEqb6UEA_zQ81kwXfg">Real Engineering</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/user/theslowmoguys">Slow Mo Guys</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA">Smarter Every Day</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/user/1veritasium">Veritasium</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.youtube.com/channel/UCphTF9wHwhCt-BzIq-s4V-g">What If</a>
+							</div>
+
+							<div class="w3-bar-block w3-sidebar w3-card w3-topright w3-animate-right" style="display:none;right:0;top:0;" id="QLGoogle">
+								<button onclick="closeQLGoogle()" class="w3-bar-item w3-button w3-large">&minus; [Hide]</button>
+								<li class="w3-bar-item w3-text-teal">Google Quick</li>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://experiments.withgoogle.com/collection/chrome">Chrome Expirements</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=colour+picker">Colour Picker</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=currency+converter">Currency Converter</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=calculator">Google Calculator</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=google+dictionary">Google Dictionary</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://earth.google.com/web">Google Earth</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://maps.googl.com">Google Map</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/sky">Google Sky</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=timer">Google Timer</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=translate">Google Translate</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://books.google.com/ngrams">NGrams</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=time">Time Stamp</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=unit+converter">Unit Converter</a>
+								<li class="w3-bar-item w3-text-teal">Google Games</li>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?tbm=isch&q=Atari+Breakout">Atari Breakout</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="http://www.agoogleaday.com/">A Google A Day</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=play+cricket">cricket</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="chrome://dino">Dino Chrome (bugged)</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=minesweeper">minesweeper</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=PacMan">Pac Man</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://quickdraw.withgoogle.com">Quick Draw</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=snake+game">Snake</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=solitaire">solitaire</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/doodles/halloween-2016">Spookey Cat</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.google.com/search?q=Tic-Tac-Toe">Tic-Tac-Toe</a>	
+							</div>
+
+							<div class="w3-bar-block w3-sidebar w3-card w3-topright w3-animate-right" style="display:none;right:0;top:0;" id="QLIOGames">
+								<button onclick="closeQLIOGames()" class="w3-bar-item w3-button w3-large">&minus; [Hide]</button>
+								<li class="w3-bar-item w3-text-teal">.io Games</li>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="http://agar.io/">Agar.io</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://bomby.io/">bomby.io</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="http://brutal.io/">brutal.io</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="http://cursors.io/">cursors.io</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://goons.io/">goons.io</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="http://slither.io/">slither.io</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="http://splix.io/">splix.io</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="http://wormax.io/">wormax.io</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="http://zlap.io">zlap.io</a>
+								<li class="w3-bar-item w3-text-teal">IO Out</li>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://hole-io.com">Hole io</a>
+							</div>
+
+							<div class="w3-bar-block w3-sidebar w3-card w3-topright w3-animate-right" style="display:none;right:0;top:0;" id="QLWebApps">
+								<button onclick="closeQLWebApps()" class="w3-bar-item w3-button w3-large">&minus; [Hide]</button>
+								<li class="w3-bar-item w3-text-teal">Useful</li>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://10minutemail.com">10 Minute Mail</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.accountkiller.com/en#">Account Killer</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="http://www.easynepalityping.com/">Easy Nepali typing</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.ilovepdf.com/">I Love PDF</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.fakenamegenerator.com/">Fake Name Generator</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.online-convert.com/">Online Convert</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.speedtest.net/">Speed Test</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://temp-mail.org/">Temp Mail</a>
+								<li class="w3-bar-item w3-text-teal">Fun</li>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="http://1000lifehacks.com/">1000 Life Hacks</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://asoftmurmur.com/">A Soft Murmur</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.madeon.fr/adventure">Create Online Beat</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="http://geektyper.com/">Geek Typer</a>
+							</div>
+
+							<div class="w3-bar-block w3-sidebar w3-card w3-topright w3-animate-right" style="display:none;right:0;top:0;" id="QLResearch">
+								<button onclick="closeQLResearch()" class="w3-bar-item w3-button w3-large">&minus; [Hide]</button>
+								<li class="w3-bar-item w3-text-teal">Searchable Research</li>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.ask.com">Ask.com</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://brainly.com/">Brainly</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.scholar.google.com">Google Scholar</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.thesaurus.com">Thesaurus Dictonary</a>
+								<li class="w3-bar-item w3-text-teal">Do or Read Research</li>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.w3schools.com/">W3Schools</a>
+									<!--
+									<div class="w3-dropdown-click">
+										<button class="w3-button" onclick="myFunction()">W3School
+										</button>
+										<div class="w3-dropdown-content w3-card w3-bar-block" id="Demo">
+											<a href="#" class="w3-bar-item w3-button">Link</a>
+											<a href="#" class="w3-bar-item w3-button">Link</a>
+										</div>
+									</div>
+									-->
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.wikipedia.org/">Wikipedia</a>
+								<li class="w3-bar-item w3-text-teal">Other Research</li>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://alternativeto.net/">Alternative To</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://downforeveryoneorjustme.com/">Down For Everyone Or Just Me</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://fonts.google.com/">Google Fonts</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.truecaller.com/">True Caller</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.virustotal.com/">VirusTotal</a>
+							</div>
+
+							<div class="w3-bar-block w3-sidebar w3-card w3-topright w3-animate-right" style="display:none;right:0;top:0;" id="QLProxies">
+								<button onclick="closeQLProxies()" class="w3-bar-item w3-button w3-large">&minus; [Hide]</button>
+								<li class="w3-bar-item w3-text-teal">Useful</li>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://www.genmirror.com/">Gen Mirror</a>
+									<a target="_blank" class="w3-bar-item w3-button ard-bg-olgray" href="https://us.hidester.com">Hide Ster</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="w3-col s6 m3 w3-section">		<!-- Section for "UnCategorized Web" -->
+					<button class="w3-button w3-blue w3-block" onclick="PopUpUnCategorizedWeb()">UnCategorized Web</button>
+					<div id="UnCategorizedWeb" class="w3-modal w3-animate-zoom">
+						<div class="w3-modal-content">
+
+							<header class="w3-container ard-titlebar"> 
+								<span onclick="document.getElementById('UnCategorizedWeb').style.display='none'" class="w3-button ard-close w3-display-topright">&times;</span>
+									<h2>UnCategorized Web</h2>
+							</header>
+							<div class="w3-container">
+								<a target="_blank" class="w3-button w3-block w3-left-align ard-bg-olgray" href="https://www.facebook.com">Facebook</a>
+								<a target="_blank" class="w3-button w3-block w3-left-align ard-bg-olgray" href="https://www.friv.com" >Friv</a>
+								<a target="_blank" class="w3-button w3-block w3-left-align ard-bg-olgray" href="https://www.google.com">Google</a>
+								<a target="_blank" class="w3-button w3-block w3-left-align ard-bg-olgray" href="https://www.instagram.com/">Instagram</a>
+								<a target="_blank" class="w3-button w3-block w3-left-align ard-bg-olgray" href="https://www.y8.com" >Y8</a>
+								<a target="_blank" class="w3-button w3-block w3-left-align ard-bg-olgray" href="https://www.youtube.com">Youtube</a>
+								<a target="_blank" class="w3-button w3-block w3-left-align ard-bg-olgray" href="https://yts.lt">YTS</a>
+							</div>
+							<footer class="w3-container ard-titlebar">
+								<p>Head Over To Websites...</p>
+							</footer>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="w3-col s6 m3 w3-section">		<!-- Section for "Educational" -->
+					<button class="w3-button w3-green w3-block" onclick="PopUpEducational()">Educational</button>
+					<div id="Educational" class="w3-modal w3-animate-zoom">
+						<div class="w3-modal-content">
+
+							<header class="w3-container ard-titlebar"> 
+								<span onclick="document.getElementById('Educational').style.display='none'" class="w3-button ard-close w3-display-topright">&times;</span>
+									<h2>Educational</h2>
+							</header>
+							<div class="w3-container">
+								<a target="_blank" class="w3-button w3-block  w3-left-align ard-bg-olgray" href="https://artofproblemsolving.com">Art Of Problem Solving</a>
+								<a target="_blank" class="w3-button w3-block  w3-left-align ard-bg-olgray" href="https://www.kullabs.com">Kullabs</a>
+								<a target="_blank" class="w3-button w3-block  w3-left-align ard-bg-olgray" href="http://www.khullakitab.com/">KhulaKitab</a>
+								<a target="_blank" class="w3-button w3-block  w3-left-align ard-bg-olgray" href="https://www.assignmentpoint.com/">Assignment Point</a>
+								<a target="_blank" class="w3-button w3-block  w3-left-align ard-bg-olgray" href="https://notes.tyrocity.com/">Tyrocity Notes</a>
+								<a target="_blank" class="w3-button w3-block  w3-left-align ard-bg-olgray" href="https://www.merospark.com/">Mero Spark</a>
+								<a target="_blank" class="w3-button w3-block  w3-left-align ard-bg-olgray" href="https://www.khanacademy.org/">Khan Academy</a>
+								<a target="_blank" class="w3-button w3-block  w3-left-align ard-bg-olgray" href="#">Quick Links (soon)</a>
+							</div>
+							<footer class="w3-container ard-titlebar">
+								<p>Items That Can Be Used For Education...</p>
+							</footer>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="w3-col s6 m3 w3-section">		<!-- Section for "Some Slots" -->
+					<button class="w3-button w3-teal w3-block" onclick="PopUpSomeSlots()">Some Slots</button>
+					<div id="SomeSlots" class="w3-modal w3-animate-zoom">
+						<div class="w3-modal-content">
+							<header class="w3-container ard-titlebar"> 
+								<span onclick="document.getElementById('SomeSlots').style.display='none'" class="w3-button ard-close w3-display-topright">&times;</span>
+									<h2>Some Slots</h2>
+							</header>
+							<div class="w3-content w3-display-container">
+								<div class="mySlides2 w3-block w3-brown w3-center s12">
+									<a target="_blank" class="w3-button s3" href="https://mail.google.com/mail/u/0/">G-Mail 0</a>
+									<a target="_blank" class="w3-button s3" href="https://mail.google.com/mail/u/1/">G-Mail 1</a>
+									<a target="_blank" class="w3-button s3" href="https://mail.google.com/mail/u/2/">G-Mail 2</a>
+									<a target="_blank" class="w3-button s3" href="https://mail.google.com/mail/u/3/">G-Mail 3</a>
+									<a target="_blank" class="w3-button s3" href="https://mail.google.com/mail/u/4/">G-Mail 4</a>
+								</div>
+								<div class="mySlides2 w3-block w3-win8-pink w3-center s12">
+									<a target="_blank" class="w3-button s3"href="https://contacts.google.com/u/0/">G-Contact 0</a>
+									<a target="_blank" class="w3-button s3"href="https://contacts.google.com/u/1/">G-Contact 1</a>
+									<a target="_blank" class="w3-button s3"href="https://contacts.google.com/u/2/">G-Contact 2</a>
+									<a target="_blank" class="w3-button s3"href="https://contacts.google.com/u/3/">G-Contact 3</a>
+									<a target="_blank" class="w3-button s3"href="https://contacts.google.com/u/4/">G-Contact 4</a>
+								</div>
+								<div class="mySlides2 w3-block w3-win8-brown w3-center s12">
+									<a target="_blank" class="w3-button s3"href="https://drive.google.com/u/0/">G-Drive 0</a>
+									<a target="_blank" class="w3-button s3"href="https://drive.google.com/u/1/">G-Drive 1</a>
+									<a target="_blank" class="w3-button s3"href="https://drive.google.com/u/2/">G-Drive 2</a>
+									<a target="_blank" class="w3-button s3"href="https://drive.google.com/u/3/">G-Drive 3</a>
+									<a target="_blank" class="w3-button s3"href="https://drive.google.com/u/4/">G-Drive 4</a>
+								</div>
+								<div class="mySlides2 w3-block w3-win8-steel w3-center s12">
+									<a target="_blank" class="w3-button s3"href="https://photos.google.com/u/0/">G-Photos 0</a>
+									<a target="_blank" class="w3-button s3"href="https://photos.google.com/u/1/">G-Photos 1</a>
+									<a target="_blank" class="w3-button s3"href="https://photos.google.com/u/2/">G-Photos 2</a>
+									<a target="_blank" class="w3-button s3"href="https://photos.google.com/u/3/">G-Photos 3</a>
+									<a target="_blank" class="w3-button s3"href="https://photos.google.com/u/4/">G-Photos 4</a>
+								</div>
+
+								<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+								<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+							</div>
+							<footer class="w3-container ard-titlebar">
+								<p>Slots That May Come Handy...</p>
+							</footer>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="w3-col s12 m6 w3-section">			<!-- Slider Section For Mom -->
+					<div class="w3-content w3-display-container">
+						<button class="mySlides1 w3-button w3-block ard-bg-lred w3-center s12 m6" onclick="PopUpTeleFilm()">टेलि फिलिम</button>
+						<button class="mySlides1 w3-button w3-block ard-bg-blue w3-center s12 m6" onclick="PopUpTV()">टी भी</button>
+						<button class="mySlides1 w3-button w3-block ard-bg-pink w3-opacity w3-center s12 m6" onclick="PopUpKaryakram()">कार्यक्रम</button>
+						<button class="mySlides1 w3-button w3-block ard-bg-lgreen w3-opacity w3-center s12 m6" onclick="PopUpGeetHaru()">गित हरु</button>
+						<div id="PopUpTeleFilm" class="w3-modal w3-animate-zoom">		<!-- Sliding Section For Mom - TeleFilm -->
+							<div class="w3-modal-content">
+								<header class="w3-container ard-titlebar">
+									<span onclick="document.getElementById('PopUpTeleFilm').style.display='none'" class="w3-button ard-close w3-display-topright">&times;</span>
+										<h2>टेलि फिलिम</h2>
+								</header>
+								<div class="w3-container">
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=YevSWiJZTIU&list=PLwUmS78P9jN1dd_34VMWWppTRAkKpT83L">हर्के हल्दार</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=1fX-xLCyGHI&list=PLwUmS78P9jN3trS6u9OE_YjEDq_iIUY2_">दिट्ठा साब</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=xsMWo06smEw&list=PLwUmS78P9jN29SKbRbtIqdQ_DUpbNdNQz">रिसानी माफ</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=xtdoIxfhtUU&list=PL5IdznwvT_07yiUGA2964s0bRSAGfvnbD">भद्रगोल</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=ptxQ9H-kLQw&list=PL5IdznwvT_06KpomPRMReY_cHcR_R7MmH">मेरी बास्सै</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=0dBUy1Xa4to&list=PL5IdznwvT_05Ltok6998IsFIO-qxKRzyc">ब्रेक फेल</a>
+								</div>
+								<footer class="w3-container ard-win10-titlebar">
+									<p>एउटा रोज्नुहोस्...</p>
+								</footer>
+							</div>
+						</div>
+						<div id="PopUpTV" class="w3-modal w3-animate-zoom">		<!-- Sliding Section For Mom - TV -->
+							<div class="w3-modal-content">
+								<header class="w3-container ard-titlebar"> 
+									<span onclick="document.getElementById('PopUpTV').style.display='none'" class="w3-button ard-close w3-display-topright">&times;</span>
+										<h2>टी भी</h2>
+								</header>
+								<div class="w3-container">
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=mZFexQ_d82o">एभीनिउस खबर</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=LDDDkLQRu80">निउस २४</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=hzZUzQThW1w">एबिसी  टि भी</a>
+								</div>
+								<footer class="w3-container ard-win10-titlebar">
+									<p>एउटा रोज्नुहोस्...</p>
+								</footer>
+							</div>
+						</div>
+						<div id="PopUpKaryakram" class="w3-modal w3-animate-zoom">	<!-- Sliding Section For Mom - Karyakram -->
+							<div class="w3-modal-content">
+								<header class="w3-container ard-titlebar"> 
+									<span onclick="document.getElementById('PopUpKaryakram').style.display='none'" class="w3-button ard-close w3-display-topright">&times;</span>
+									<h2>कार्यक्रम</h2>
+								</header>
+								<div class="w3-container">
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/playlist?list=PLwUmS78P9jN1_K0L8WVhCjS1WG3WbpE7T">८ बजेको कान्तिपुर समाचार</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/playlist?list=PLe4tVQoTSSrA_GFYayAKNrRHOClwM0IUi">सिधा कुरा जनता संग</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=XT7sDxk6IqI&list=PLwUmS78P9jN3FrhY4xTrONIu-v_RAZodW">साझा सवाल</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=g-MGIWss8e4&list=PLZOdYhgxG-wJxZOJH-t85jAHGlZ4mfral">खोज खबर</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/playlist?list=PLe4tVQoTSSrB7w8_ueicmcvFtbHaaGpBP">पावर निउस</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=QKAPFkKgugE&list=PLMjL87JJPlO-JF_nnxo4h9X-32ei8gFUM">खबर भित्रको खबर</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/watch?v=lj36fW77d8s&list=PLkz5pZs7dKtYngqAESUn8RWFSmeNNGtQb">समाज को खबर</a>
+								</div>
+								<footer class="w3-container ard-titlebar">
+									<p>एउटा रोज्नुहोस्...</p>
+								</footer>
+							</div>
+						</div>
+						<div id="PopUpGeetHaru" class="w3-modal w3-animate-zoom">	<!-- Sliding Section For Mom - GeetHaru -->
+							<div class="w3-modal-content">
+								<header class="w3-container ard-titlebar"> 
+									<span onclick="document.getElementById('PopUpGeetHaru').style.display='none'" class="w3-button ard-close w3-display-topright">&times;</span>
+										<h2>गित हरु</h2>
+								</header>
+								<div class="w3-container">
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/results?search_query=%E0%A4%A8%E0%A4%AF%E0%A4%BE+%E0%A4%A4%E0%A5%80%E0%A4%9C%E0%A4%95%E0%A5%8B+%E0%A4%97%E0%A4%BF%E0%A4%A4+%E0%A4%B9%E0%A4%B0%E0%A5%81">नया तीजको गित हरु</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/results?search_query=%E0%A4%A8%E0%A4%AF%E0%A4%BE+%E0%A4%A6%E0%A5%8B%E0%A4%B9%E0%A5%8B%E0%A4%B0%E0%A4%BF+%E0%A4%97%E0%A5%80%E0%A4%A4">नया दोहोरि गीत</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/results?search_query=%E0%A4%A8%E0%A4%AF%E0%A4%BE+%E0%A4%98%E0%A4%AE%E0%A5%8D%E0%A4%B8%E0%A4%BE+%E0%A4%98%E0%A4%AE%E0%A5%8D%E0%A4%B8%E0%A5%80">नया घम्सा घम्सी</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/playlist?list=PLkz5pZs7dKtZSimNgaqzzouE6OBpcqvPA">उकाली ओराली</a>
+									<a target="_blank" class="w3-button w3-block" href="https://www.youtube.com/channel/UCJZdKTQFtn-Qej3HRI_3HGQ/videos">इन्द्रेणी</a>
+								</div>
+								<footer class="w3-container ard-titlebar">
+									<p>एउटा रोज्नुहोस्...</p>
+								</footer>
+							</div>
+						</div>
+
+						<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+						<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+		var slideIndex = [1,1];
+		var slideId = ["mySlides1", "mySlides2"]
+		showDivs(1, 0);
+		showDivs(1, 1);
+
+		function plusDivs(n, no) {
+			showDivs(slideIndex[no] += n, no);
+		}
+
+		function showDivs(n, no) {
+		var i;
+		var x = document.getElementsByClassName(slideId[no]);
+		if (n > x.length) {slideIndex[no] = 1}
+		if (n < 1) {slideIndex[no] = x.length}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+		x[slideIndex[no]-1].style.display = "block";  
+		}
+		</script>
+	</body>
+</html>

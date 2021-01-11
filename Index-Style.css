@@ -1,0 +1,10 @@
+@charset:"UTF-8";
+
+body {
+	background-color: darkgray;
+}
+
+a {
+	text-decoration: none;
+	text-underline-position: none;
+}

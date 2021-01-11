@@ -1,0 +1,15 @@
+/* Windows Element */
+.ard-close:hover	{ background-color: rgb(232, 17, 35)!important;		color: white!important;}
+.ard-titlebar 		{ background-color: rgb(231, 234, 237)!important;	color: black!important;}
+
+/* Coloring */
+.ard-bg-blue		{ background-color: rgb(41, 151, 204)!important;	color: white!important;}
+.ard-bg-red			{ background-color: rgb(232, 17, 35)!important;		color: white!important;}
+.ard-bg-lred		{ background-color: #ff3838!important; color: white!important }
+.ard-bg-black		{ background-color: rgb(16, 16, 16)!important;		color: white!important;}
+.ard-bg-pink		{ background-color: #ff4dcc!important;		color: white!important;}
+.ard-bg-lgreen		{ background-color: #376e37!important;		color: white!important;}
+
+/* on-hover */
+.ard-bg-oblack:hover	{ background-color: rgb(71, 71, 71)!important;		color: white!important;}
+.ard-bg-olgray:hover	{ background-color: rgb(208, 210, 213)!important;	color: black!important;}
